@@ -1,6 +1,9 @@
 #logo {
   height: 40px; }
 
+#welcome {
+  color: #ED6F39; }
+
 a:focus {
   outline: none;
   border: none; }
