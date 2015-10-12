@@ -19,10 +19,10 @@ a:focus {
   color: white; }
 
 .navbar-trans:not(.navbar-inverse) .navbar-nav li a:focus, .navbar-trans:not(.navbar-inverse) .navbar-nav li a:hover {
-  color: #ED6F39; }
+  color: white; }
 
 .navbar-trans:not(.navbar-inverse) .navbar-nav .active a:hover {
-  color: #ED6F39; }
+  color: white; }
 
 .navbar {
   background: #ED6F39 none repeat scroll 0% 0%;
