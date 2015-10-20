@@ -22,6 +22,8 @@
         <!-- BG Video -->
         <link rel="stylesheet" href="assets/styles/vendor/jquery.mb.YTPlayer.min.css">
 
+        <link rel="stylesheet" href="assets/styles/vendor/colorbox.css">
+
 
         <!-- Definity CSS -->
         <link rel="stylesheet" href="assets/styles/main.css">
@@ -29,7 +31,10 @@
         <link rel="stylesheet" href="assets/styles/custom.css">
 
         <!-- JS -->
+        <script src="assets/js/vendor/jquery-2.1.4.min.js"></script>
+        <script src="assets/js/vendor/jquery.colorbox.js"></script>
         <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="assets/js/index.js"></script>
     </head>
     <body id="page-top" data-spy="scroll" data-target=".navbar">
         <!--[if lt IE 8]>
@@ -154,42 +159,9 @@
 
         <!-- ========== Number Counters - Parallax ========== -->
 
-        <div class="number-counters">
+        <div id="skillsCircles" class="number-counters circles-counters">
           <div class="container">
-            <div id="counters" class="row count-wrapper">
 
-              <!-- Item 1 -->
-              <div class="col-md-3 mb-sm-100 count-item wow fadeIn" data-wow-duration="1s" data-wow-delay=".3s">
-                <span id="count-1" class="count-nbr">467</span>
-                <span class="count-text">Projects completed</span>
-              </div>
-
-              <!-- Item 2 -->
-              <div class="col-md-3 mb-sm-100 count-item wow fadeIn" data-wow-duration="1s">
-                <span id="count-2" class="count-nbr">2835</span>
-                <span class="count-text">Emails Send</span>
-              </div>
-
-              <!-- Item 3 -->
-              <div class="col-md-3 mb-sm-100 count-item wow fadeIn" data-wow-duration="1s">
-                <span id="count-3" class="count-nbr">46,930</span>
-                <span class="count-text">Pixels created</span>
-              </div>
-
-              <!-- Item 4 -->
-              <div class="col-md-3 count-item wow fadeIn" data-wow-duration="1s" data-wow-delay=".3s">
-                <span id="count-4" class="count-nbr">102,890</span>
-                <span class="count-text">Happy clients</span>
-              </div>
-
-            </div><!-- / .row -->
-          </div><!-- / .container -->
-        </div><!-- / .number-counters -->
-
-        <!-- ========== Cricle Counters - Parallax ========== -->
-
-        <div id="skillsCircles" class="circles-counters">
-          <div class="container">
             <div id="counters" class="row count-wrapper">
 
               <!-- Item 1 -->
@@ -217,10 +189,37 @@
               </div>
 
             </div><!-- / .row -->
+
+            <div id="counters" class="row count-wrapper">
+
+              <!-- Item 1 -->
+              <div class="col-md-3 mb-sm-100 count-item wow fadeIn" data-wow-duration="1s" data-wow-delay=".3s">
+                <span id="count-1" class="count-nbr">467</span>
+                <span class="count-text">Projects completed</span>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="col-md-3 mb-sm-100 count-item wow fadeIn" data-wow-duration="1s">
+                <span id="count-2" class="count-nbr">2835</span>
+                <span class="count-text">Emails Send</span>
+              </div>
+
+              <!-- Item 3 -->
+              <div class="col-md-3 mb-sm-100 count-item wow fadeIn" data-wow-duration="1s">
+                <span id="count-3" class="count-nbr">46,930</span>
+                <span class="count-text">Pixels created</span>
+              </div>
+
+              <!-- Item 4 -->
+              <div class="col-md-3 count-item wow fadeIn" data-wow-duration="1s" data-wow-delay=".3s">
+                <span id="count-4" class="count-nbr">102,890</span>
+                <span class="count-text">Happy clients</span>
+              </div>
+
+            </div><!-- / .row -->
+
           </div><!-- / .container -->
-        </div><!-- / .circles-counters -->
-
-
+        </div><!-- / .number-counters -->
 
         <!-- ========== Features - Centerd Image ========== -->
 
@@ -339,91 +338,41 @@
               </div><!-- / .col-lg-3 -->
 
 
-               <!--Member 2 -->
-              <!--<div class="col-lg-3 col-md-6 mb-sm-50">-->
-                <!--<div class="t-item wow fadeIn" data-wow-duration="2s" data-wow-delay=".3s">-->
+              <!-- Member 1 -->
+              <div class="col-lg-9 col-md-6 mb-sm-50">
+                <div class="t-item wow fadeIn" data-wow-duration="2s">
 
-                   <!--Image-->
-                  <!--<div class="t-image">-->
-                    <!--<img src="/assets/images/paul.jpg" alt="Team Member" class="img-responsive">-->
-                    <!--<div class="t-description">-->
-                      <!--<div class="content-wrapper">-->
-                        <!--<h4 class="h-alt">Hello!</h4>-->
-                        <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>-->
-                      <!--</div>-->
-                    <!--</div>-->
-                  <!--</div>-->
+                  <!-- Image -->
+                  <div class="t-image">
+                    <img src="/assets/images/paul.jpg" style="width:900px;" alt="Team Member" class="img-responsive">
+                    <div class="t-description">
+                      <div class="content-wrapper">
+                        <h4 class="h-alt">Hello!</h4>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
 
-                   <!--Info-->
-                  <!--<div class="t-info">-->
-                    <!--<h4 class="t-name">Carol Greene</h4>-->
-                    <!--<span class="t-role">Art Director</span>-->
-                    <!--<ul class="social-links">-->
-                      <!--<li><a href="#"><i class="fa fa-facebook"></i></a></li>-->
-                      <!--<li><a href="#"><i class="fa fa-twitter"></i></a></li>-->
-                      <!--<li><a href="#"><i class="fa fa-linkedin"></i></a></li>-->
-                      <!--<li><a href="#"><i class="fa fa-dribbble"></i></a></li>-->
-                    <!--</ul>-->
-                  <!--</div>-->
+                  <!-- Info -->
+                  <div class="t-info">
+                    <h4 class="t-name">Philip Lee</h4>
+                    <span class="t-role">CEO &amp; Founder</span>
+                    <ul class="social-links">
+                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                      <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                    </ul>
+                  </div>
 
-                <!--</div>[> / .t-item <]-->
-              <!--</div>[> / .col-lg-3 <]-->
-
-
-               <!--Member 3-->
-              <!--<div class="col-lg-3 col-md-6 mb-sm-50">-->
-                <!--<div class="t-item wow fadeIn" data-wow-duration="2s" data-wow-delay=".6s">-->
-
-                   <!--Image-->
-                  <!--<div class="t-image">-->
-                    <!--<img src="/assets/images/paul.jpg" alt="Team Member" class="img-responsive">-->
-                    <!--<div class="t-description">-->
-                      <!--<div class="content-wrapper">-->
-                        <!--<h4 class="h-alt">Hello!</h4>-->
-                        <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>-->
-                      <!--</div>-->
-                    <!--</div>-->
-                  <!--</div>-->
-
-                   <!--Info-->
-                  <!--<div class="t-info">-->
-                    <!--<h4 class="t-name">Tyler Owens</h4>-->
-                    <!--<span class="t-role">Lead Designer</span>-->
-                    <!--<ul class="social-links">-->
-                      <!--<li><a href="#"><i class="fa fa-facebook"></i></a></li>-->
-                      <!--<li><a href="#"><i class="fa fa-twitter"></i></a></li>-->
-                      <!--<li><a href="#"><i class="fa fa-linkedin"></i></a></li>-->
-                      <!--<li><a href="#"><i class="fa fa-dribbble"></i></a></li>-->
-                    <!--</ul>-->
-                  <!--</div>-->
-
-                <!--</div>[> / .t-item <]-->
-              <!--</div>[> / .col-lg-3 <]-->
-
-
-               <!--Join-->
-              <!--<div class="col-lg-3 col-md-6">-->
-                <!--<div class="t-join wow fadeIn" data-wow-duration="2s" data-wow-delay=".9s">-->
-
-                   <!--Image-->
-                  <!--<div class="t-image">-->
-                    <!--<i class="fa fa-user bg-icon"></i>-->
-                    <!--<div class="t-description">-->
-                      <!--<h4 class="h-alt">Apply Now</h4>-->
-                      <!--<p>We are allways looking for passionate lorem ipsum dolor sit amet, consectetur dolor adipisicing elit. Architecto aliquam voluptas doloribus maiores sit.</p>-->
-                    <!--</div>-->
-                  <!--</div>-->
-
-                   <!--Info-->
-                  <!--<div class="t-info">-->
-                    <!--<h4 class="t-name">You?</h4>-->
-                    <!--<span class="t-role">Junior Developer</span>-->
-                    <!--<button class="btn btn-small" type="file">send cv</button>-->
-                  <!--</div>-->
-
-                <!--</div>[> / .t-item <]-->
-              <!--</div>[> / .col-lg-3 <]-->
-
+                </div><!-- / .t-item -->
+              </div><!-- / .col-lg-9 -->
 
             </div><!-- / .row -->
           </section><!-- / .contianer -->
@@ -495,7 +444,7 @@
                 <figure>
                   <img src="http://placehold.it/990x650/aaa/ccc" alt="Project Example">
                   <figcaption>
-                    <a href="pages/portfolio/portfolio-single-1.html" class="open-btn"><i class="fa fa-expand"></i></a>
+                    <a href="http://player.vimeo.com/video/42778282?autoplay=1" class="open-btn vimeo"><i class="fa fa-expand"></i></a>
                     <div class="p-content">
                       <h4>Project Name</h4>
                       <h6 class="subheading">Sub heading for the project</h6>
@@ -509,7 +458,7 @@
                 <figure>
                   <img src="http://placehold.it/990x650" alt="Project Example">
                   <figcaption>
-                    <a href="pages/portfolio/portfolio-single-1.html" class="open-btn"><i class="fa fa-expand"></i></a>
+                    <a href="http://vimeo.com/42778282" class="open-btn"><i class="fa fa-expand"></i></a>
                     <div class="p-content">
                       <h4>Project Name</h4>
                       <h6 class="subheading">Sub heading for the project</h6>
@@ -523,7 +472,7 @@
                 <figure>
                   <img src="http://placehold.it/990x650/aaa/ccc" alt="Project Example">
                   <figcaption>
-                    <a href="pages/portfolio/portfolio-single-1.html" class="open-btn"><i class="fa fa-expand"></i></a>
+                    <a href="http://vimeo.com/42778282" class="open-btn"><i class="fa fa-expand"></i></a>
                     <div class="p-content">
                       <h4>Project Name</h4>
                       <h6 class="subheading">Sub heading for the project</h6>

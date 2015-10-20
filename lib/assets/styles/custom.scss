@@ -1,5 +1,10 @@
 $orange: #ED6F39;
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 #logo {
   height: 40px;
 }

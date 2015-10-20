@@ -34,4 +34,8 @@ a:focus {
   -webkit-transition: background 0.3s;
   transition: background 0.3s; }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 /*# sourceMappingURL=custom.css.map */
