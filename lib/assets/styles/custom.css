@@ -38,4 +38,12 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
+
+#skillsCircles {
+  height: 365px;
+}
+
+#portfolio {
+  margin-top: 60px;
+}
 /*# sourceMappingURL=custom.css.map */
