@@ -1,38 +1,44 @@
+/*ED6F39 is the current orange. If you want to change it, just find and replace it.*/
+
 #logo {
 height: 40px; }
 
 #welcome {
-color: #ED6F39; }
+  color: #ED6F39;
+}
 
 a:focus {
   outline: none;
-border: none; }
+  border: none;
+}
 
-/**::-moz-selection {*/
-/*color: $orange;*/
-/*background: yellow;*/
-/*}*/
 .navbar .navbar-nav .active a {
-color: white; }
+  color: white;
+}
 
 .navbar .navbar-nav li a {
-color: white; }
+  color: white;
+}
 
 .navbar-trans:not(.navbar-inverse) .navbar-nav li a:focus, .navbar-trans:not(.navbar-inverse) .navbar-nav li a:hover {
-color: white; }
+  color: white;
+}
 
 .navbar-trans:not(.navbar-inverse) .navbar-nav .active a:hover {
-color: white; }
+  color: white;
+}
 
 .navbar {
   background: #ED6F39 none repeat scroll 0% 0%;
-border-bottom: none; }
+  border-bottom: none;
+}
 
 .navbar-trans {
   border-bottom: none;
   background: transparent;
   -webkit-transition: background 0.3s;
-transition: background 0.3s; }
+  transition: background 0.3s;
+}
 
 html, body {
   max-width: 100%;
